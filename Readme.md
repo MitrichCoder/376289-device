@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Дмитрий Шешков](https://up.htmlacademy.ru/htmlcss/20/user/376289).
-* Наставник: `Неизвестно`.
+* Наставник: [Вадим Новаш](https://htmlacademy.ru/profile/stakeout).
 
 ---
 
