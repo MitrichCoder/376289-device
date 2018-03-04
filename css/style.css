@@ -1,0 +1,27 @@
+/* Немного стилей для разметки. Потом всё привести в порядок */
+.header-logo g {
+  fill: rgba(0, 0, 0, 1);
+}
+
+.header-logo:hover g {
+  fill-opacity: 0.5;
+}
+
+.header-logo:active g {
+  fill-opacity: 0.3;
+}
+
+.footer-logo g {
+  fill: #ffc600;
+}
+
+.partners__logo {
+  width: 260px;
+  height: 100px;
+  display: block; 
+  overflow: hidden;
+}
+
+.partners__logo:hover img {
+  margin-top: -100px;
+}
