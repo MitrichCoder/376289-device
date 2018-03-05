@@ -33,3 +33,37 @@
   height: 1px;
   margin: -1px;
 }*/
+
+.catalog__item {
+    width: 160px;
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+    margin-right: 40px;
+}
+
+.catalog a {
+  color: #464646;
+  text-decoration: none;
+}
+
+.catalog__item {
+  width: 160px;
+}
+
+.catalog__image-container {
+  height: 160px;
+  background: #f7e296;
+}
+
+.catalog__link:hover .catalog__image-container {
+  background: #ffc600;
+}
+
+.catalog__link:active .catalog__image {
+  opacity: 0.6;
+}
+
+.catalog__link:active .catalog__text {
+  color: #c9c9c9;
+}
