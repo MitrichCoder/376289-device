@@ -27,28 +27,37 @@
       </ul>
       
       <nav class="main-navigation">
-        <a class="main-navigation__dropdown" href="#">Каталог товаров</a>
-        <div class="main-navigation__submenu">
-          <ul class="main-navigation__list">
-            <li class="main-navigation__item"><a href="#">Виртуальная реальность</a></li>
-            <li class="main-navigation__item"><a href="#">Моноподы для селфи</a></li>
-            <li class="main-navigation__item"><a href="#">Экшн-камеры</a></li>
-          </ul>
-          <ul class="main-navigation__list">
-            <li class="main-navigation__item"><a href="#">Фитнесс-браслеты</a></li>
-            <li class="main-navigation__item"><a href="#">Умные часы</a></li>
-          </ul>
-          <ul class="main-navigation__list">
-            <li class="main-navigation__item"><a href="#">Квадрокоптеры</a></li>
-          </ul>
-        </div>
-      </nav>
-      
-      <ul class="service-navigation service-navigation__header">
-        <li class="service-navigation__item"><a href="#">Доставка</a></li>
-        <li class="service-navigation__item"><a href="#">Гарантия</a></li>
-        <li class="service-navigation__item"><a href="#">Контакты</a></li>
-      </ul>  	
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item">
+            <a href="#">Каталог товаров</a>
+            <!-- submenu -->
+            <ul class="submenu">
+              <li class="submenu__item">
+                <ul class="submenu__col">
+                  <li class="main-navigation__item"><a href="#">Виртуальная реальность</a></li>
+                  <li class="main-navigation__item"><a href="catalog.html">Моноподы для селфи</a></li>
+                  <li class="main-navigation__item"><a href="#">Экшн-камеры</a></li>
+                </ul>
+              </li>
+              <li class="submenu__item">
+                <ul class="submenu__col">
+                  <li class="main-navigation__item"><a href="#">Фитнесс-браслеты</a></li>
+                  <li class="main-navigation__item"><a href="#">Умные часы</a></li>
+                </ul>
+              </li>
+              <li class="submenu__item">
+                <ul class="submenu__col">
+                  <li class="main-navigation__item"><a href="#">Квадрокоптеры</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- end-submenu -->
+          </li>
+          <li class="main-navigation__item"><a href="catalog.html">Доставка</a></li>
+          <li class="main-navigation__item"><a href="#">Гарантия</a></li>
+          <li class="main-navigation__item"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>	
 
     </header>
 
@@ -91,10 +100,10 @@
         <ul class="catalog__list">
 
           <li class="catalog__item">
-            <div class="catalog__img">
+            <div class="catalog__img-wrapper">
               <img src="img/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
               <div class="catalog__act">
-                <a class="button" href="#">В корзину</a>
+                <a class="catalog__add-cart" href="#">В корзину</a>
                 <a class="catalog__compare" href="#">Добавить к сравнению</a>
               </div>
             </div>
@@ -107,10 +116,10 @@
           </li>
 
           <li class="catalog__item">
-            <div class="catalog__img">
+            <div class="catalog__img-wrapper">
               <img src="img/product-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
               <div class="catalog__act">
-                <a class="button" href="#">В корзину</a>
+                <a class="catalog__add-cart" href="#">В корзину</a>
                 <a class="catalog__compare" href="#">Добавить к сравнению</a>
               </div>
             </div>
@@ -123,10 +132,10 @@
           </li>
 
           <li class="catalog__item">
-            <div class="catalog__img">
+            <div class="catalog__img-wrapper">
               <img src="img/product-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
               <div class="catalog__act">
-                <a class="button" href="#">В корзину</a>
+                <a class="catalog__add-cart" href="#">В корзину</a>
                 <a class="catalog__compare" href="#">Добавить к сравнению</a>
               </div>
             </div>
@@ -139,10 +148,10 @@
           </li>
 
           <li class="catalog__item catalog__item--new">
-            <div class="catalog__img">
+            <div class="catalog__img-wrapper">
               <img src="img/product-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
               <div class="catalog__act">
-                <a class="button" href="#">В корзину</a>
+                <a class="catalog__add-cart" href="#">В корзину</a>
                 <a class="catalog__compare" href="#">Добавить к сравнению</a>
               </div>
             </div>

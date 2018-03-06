@@ -26,31 +26,39 @@
         <li class="user-area__item user-area__item--cart"><a href="#">Корзина</a></li>
       </ul>
       
+      <!-- Вся основная навигация шапки в одном nav -->
       <nav class="main-navigation">
-        <a class="main-navigation__dropdown" href="#">Каталог товаров</a>
-        <!-- Здесь обернул три списка выпадающего меню. В макете они немного разнесены. -->
-        <div class="main-navigation__submenu">
-          <ul class="main-navigation__list">
-            <li class="main-navigation__item"><a href="#">Виртуальная реальность</a></li>
-            <li class="main-navigation__item"><a href="catalog.html">Моноподы для селфи</a></li>
-            <li class="main-navigation__item"><a href="#">Экшн-камеры</a></li>
-          </ul>
-          <ul class="main-navigation__list">
-            <li class="main-navigation__item"><a href="#">Фитнесс-браслеты</a></li>
-            <li class="main-navigation__item"><a href="#">Умные часы</a></li>
-          </ul>
-          <ul class="main-navigation__list">
-            <li class="main-navigation__item"><a href="#">Квадрокоптеры</a></li>
-          </ul>
-        </div>
-        <!-- end submenu -->
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item">
+            <a href="#">Каталог товаров</a>
+            <!-- submenu -->
+            <ul class="submenu">
+              <li class="submenu__item">
+                <ul class="submenu__col">
+                  <li class="main-navigation__item"><a href="#">Виртуальная реальность</a></li>
+                  <li class="main-navigation__item"><a href="catalog.html">Моноподы для селфи</a></li>
+                  <li class="main-navigation__item"><a href="#">Экшн-камеры</a></li>
+                </ul>
+              </li>
+              <li class="submenu__item">
+                <ul class="submenu__col">
+                  <li class="main-navigation__item"><a href="#">Фитнесс-браслеты</a></li>
+                  <li class="main-navigation__item"><a href="#">Умные часы</a></li>
+                </ul>
+              </li>
+              <li class="submenu__item">
+                <ul class="submenu__col">
+                  <li class="main-navigation__item"><a href="#">Квадрокоптеры</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- end-submenu -->
+          </li>
+          <li class="main-navigation__item"><a href="catalog.html">Доставка</a></li>
+          <li class="main-navigation__item"><a href="#">Гарантия</a></li>
+          <li class="main-navigation__item"><a href="#">Контакты</a></li>
+        </ul>
       </nav>
-
-      <ul class="service-navigation service-navigation__header">
-        <li class="service-navigation__item"><a href="#">Доставка</a></li>
-        <li class="service-navigation__item"><a href="#">Гарантия</a></li>
-        <li class="service-navigation__item"><a href="#">Контакты</a></li>
-      </ul> 	
 
     </header>
 
@@ -58,12 +66,12 @@
     <main class="content">
 
       <h1 class="visually-hidden">Интернет-магазин современных гаджетов «DEVICE»</h1>
-
+      
+      <!-- Из сдайдера убрал все ненужные visually-hidden -->
       <section class="promo-slider">
         <h2 class="visually-hidden">Новые, популярные и акционные товары</h2>
         <ul class="promo-slider__list">
           <li class="promo-slider__item">
-            <h3 class="visually-hidden">Селфи палка</h3>
             <img class="promo-slider__item promo-slider__item--first" src="img/promo-img-1.png" width="384" height="486" alt="Селфи палка">
             <div class="promo-slider__content">
               <p class="promo-slider__slogan">Делай селфи, как Бен Стиллер!</p>
@@ -88,7 +96,6 @@
             </div>
           </li>
           <li class="promo-slider__item">
-            <h3 class="visually-hidden">Фитнесс-браслет</h3>
             <img src="img/promo-img-2.png" width="345" height="485" alt="Фитнесс-браслет">
               <div class="promo-slider__content">
               <p class="promo-slider__slogan">Худеем правильно!</p>
@@ -105,7 +112,6 @@
             </div>
           </li>
           <li class="promo-slider__item">
-            <h3 class="visually-hidden">Квадрокоптер</h3>
             <img src="img/promo-img-3.png" width="526" height="334" alt="Квадрокоптер">
             <div class="promo-slider__content">
               <p class="promo-slider__slogan">Порхает как бабочка, жалит как пчела!</p>
@@ -128,60 +134,50 @@
         </ul>
         <!-- Злементы управления слайдером и декоративные элементы (включая номер слайда) добавим позже. -->
       </section>
-
+      
+      <!-- Изображения убрал. Вопрос с их интерактивностью в бэкграунде решил. -->
       <section class="catalog">
         <h2 class="visually-hidden">Каталог товаров</h2>
         <ul class="catalog__list">
           <li class="catalog__item">
             <a href="#" class="catalog__link">
-              <div class="catalog__image-container">
-                <img class="catalog__image" src="img/catalog-1.png" width="160" height="160" alt="Виртуальная реальность">
-              </div>
+              <div class="catalog__img-container catalog__img-container--elem1"></div>
               <p class="catalog__text">Виртуальная реальность</p>
             </a>
           </li>
           <li class="catalog__item">
             <a href="catalog.html" class="catalog__link">
-              <div class="catalog__image-container">
-                <img class="catalog__image" src="img/catalog-2.png" width="160" height="160" alt="Моноподы для селфи">
-              </div>
+              <div class="catalog__img-container catalog__img-container--elem2"></div>
               <p class="catalog__text">Моноподы для селфи</p>
             </a>
           </li>
           <li class="catalog__item">
             <a href="#" class="catalog__link">
-              <div class="catalog__image-container">
-                <img class="catalog__image" src="img/catalog-3.png" width="160" height="160" alt="Экшн-камеры">
-              </div>
+              <div class="catalog__img-container catalog__img-container--elem3"></div>
               <p class="catalog__text">Экшн-камеры</p>
             </a>
           </li>
           <li class="catalog__item">
             <a href="#" class="catalog__link">
-              <div class="catalog__image-container">
-                <img class="catalog__image" src="img/catalog-4.png" width="160" height="160" alt="Фитнес браслеты">
-              </div>
+              <div class="catalog__img-container catalog__img-container--elem4"></div>
               <p class="catalog__text">Фитнес браслеты</p>
             </a>
           </li>
           <li class="catalog__item">
             <a href="#" class="catalog__link">
-              <div class="catalog__image-container">
-                <img class="catalog__image" src="img/catalog-5.png" width="160" height="160" alt="Умные часы">
-              </div>
+              <div class="catalog__img-container catalog__img-container--elem5"></div>
               <p class="catalog__text">Умные часы</p>
             </a>
           </li>
           <li class="catalog__item">
             <a href="#" class="catalog__link">
-              <div class="catalog__image-container">
-                <img class="catalog__image" src="img/catalog-6.png" width="160" height="160" alt="Квадрокоптеры">
-              </div>
+              <div class="catalog__img-container catalog__img-container--elem6"></div>
               <p class="catalog__text">Квадрокоптеры</p>
             </a>
           </li>
         </ul>
       </section>
+  
 
       <section class="services">
         <h2 class="visually-hidden">Дополнительные услуги</h2>
@@ -204,7 +200,7 @@
 
       <section class="parters">
         <h2 class="visually-hidden">Партнёры</h2>
-        <ul class="partners">
+        <ul class="partners__list">
           <li class="partners__item">
             <h3 class="visually-hidden">Компания DJI</h3>
             <a href="#" class="partners__logo" target="_blank">
@@ -232,26 +228,28 @@
         </ul>
       </section>
 
-      <section class="about">
-        <h2>О нас</h2>
-        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-        <ul class="about__list">
-          <li class="about__item">Деловые Линии</li>
-          <li class="about__item">Автотрейдинг</li>
-          <li class="about__item">ЖелДорЭкспедиция</li>
-        </ul>
-        <a class="button" href="#">Подробнее о нас</a>
-      </section>
-
-      <section class="contacts">
-          <h2>Контакты</h2>
-          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <a class="contacts__map__link" href="#">
-              <img class="contacts__map__img" src="img/map.jpg" width="560" height="222" alt="Карта как нас найти">
-          </a>
-          <a class="button" href="#">Напишите нам</a>
-      </section>
+      <!-- Обернул две нижние секции -->
+      <div class="about-wrapper">
+        <section class="about">
+          <h2 class="section-title">О нас</h2>
+          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+          <ul class="about__list">
+            <li class="about__item">Деловые Линии</li>
+            <li class="about__item">Автотрейдинг</li>
+            <li class="about__item">ЖелДорЭкспедиция</li>
+          </ul>
+          <a class="button" href="#">Подробнее о нас</a>
+        </section>
+        <section class="contacts">
+            <h2 class="section-title">Контакты</h2>
+            <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+            <a class="contacts__map__link" href="#">
+                <img class="contacts__map__img" src="img/map.jpg" width="560" height="222" alt="Карта как нас найти">
+            </a>
+            <a class="button" href="#">Напишите нам</a>
+        </section>
+      </div>
     	
     </main>
     
@@ -268,7 +266,7 @@
         <li class="user-area__item user-area__item--cart"><a href="#">Корзина</a></li>
       </ul>
 
-      <p>г. Москва, ул. Строителей, 15</p>
+      <p class="footer-address">г. Москва, ул. Строителей, 15</p>
 
       <ul class="service-navigation service-navigation__footer">
         <li class="service-navigation__item"><a href="#">Доставка</a></li>
@@ -276,7 +274,7 @@
         <li class="service-navigation__item"><a href="#">Контакты</a></li>
       </ul> 
 
-      <p>Тел.: +7 (495) 495-95-95</p>
+      <p class="footer-phone">Тел.: +7 (495) 495-95-95</p>
 
       <ul class="social">
         <li><a class="social-button social-button__fb" href="#">Фейсбук</a></li>

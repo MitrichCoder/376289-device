@@ -1,5 +1,7 @@
 /* Немного стилей для разметки. Потом всё привести в порядок */
-.header-logo g {
+
+/* лого в SVG */
+/*.header-logo g {
   fill: rgba(0, 0, 0, 1);
 }
 
@@ -24,7 +26,7 @@
 
 .partners__logo:hover img {
   margin-top: -100px;
-}
+}*/
 
 /*.visually-hidden {
   position: absolute;
@@ -34,36 +36,56 @@
   margin: -1px;
 }*/
 
-.catalog__item {
-    width: 160px;
-    display: inline-block;
-    vertical-align: top;
-    list-style: none;
-    margin-right: 40px;
-}
 
+/* CATALOG */
+.catalog {
+  height: 260px;
+}
 .catalog a {
   color: #464646;
   text-decoration: none;
 }
-
 .catalog__item {
+  /*width: 160px;*/
+  display: inline-block;
+  vertical-align: top;
+  list-style: none;
+  margin-right: 40px;
+}
+.catalog__link {
+  display: block;
   width: 160px;
-}
-
-.catalog__image-container {
   height: 160px;
-  background: #f7e296;
+  background: #f7e296;  
 }
-
-.catalog__link:hover .catalog__image-container {
+.catalog__link:hover {
   background: #ffc600;
 }
-
-.catalog__link:active .catalog__image {
-  opacity: 0.6;
+.catalog__img-container {
+  width: 160px;
+  height: 160px;
 }
-
+.catalog__img-container--elem1 {
+  background-image: url('../img/catalog-1.png');
+}
+.catalog__img-container--elem2 {
+  background-image: url('../img/catalog-2.png');
+}
+.catalog__img-container--elem3 {
+  background-image: url('../img/catalog-3.png');
+}
+.catalog__img-container--elem4 {
+  background-image: url('../img/catalog-4.png');
+}
+.catalog__img-container--elem5 {
+  background-image: url('../img/catalog-5.png');
+}
+.catalog__img-container--elem6 {
+  background-image: url('../img/catalog-6.png');
+}
+.catalog__img-container:active {
+  opacity: 0.3;
+}
 .catalog__link:active .catalog__text {
   color: #c9c9c9;
 }
