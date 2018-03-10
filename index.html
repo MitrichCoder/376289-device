@@ -10,14 +10,15 @@
 
     <header class="main-header">
       
-      <a class="header-logo">
+      <a class="logo logo__header">
         <img src="img/logo-device-header.svg" alt="Логотип Device">
       </a>
 
       <div class="search-form">
-        <form action="#" method="post">
-          <input class="search-form-input" type="search" placeholder="Поиск по сайту">
-          <button class="search-button" type="submit" name="send">Найти</button>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="search-form__label">Поле поиска по сайту</label>
+          <input class="search-form__input" id="search-form-field" type="search" name="search-query" placeholder="Поиск по сайту">
+          <button class="search-form__button" type="submit" name="search-form-button">Найти</button>
         </form>
       </div>
       <ul class="user-area user-area__header">
@@ -251,7 +252,7 @@
 
     <footer class="main-footer">
       
-      <a class="footer-logo">
+      <a class="logo logo__footer">
         <img src="img/logo-device-footer.svg" alt="Логотип Device">
       </a>
 
@@ -281,17 +282,35 @@
 
     </footer>
 
-
 		<!-- Modal windows -->
-    <section class="modal modal-right-us">
+    <section class="modal modal__write-us">
     	<h2 class="visualli-hidden">Напищите нам</h2>
-    	<!-- form -->
+    	<form class="write-us" action="https://echo.htmlacademy.ru" method="post">
+        <div class="write-us__row">
+          <p class="write-us__item">
+            <label for="form-name">Ваше имя:</label>
+            <input class="write-us__input" type="text" id="form-name" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p class="write-us__item">
+            <label for="form-email">Ваш e-mail:</label>
+            <input class="write-us__input" type="text" id="form-email" name="email" placeholder="email@example.com">
+          </p>
+        </div>
+        <p class="write-us__item">
+          <label for="form-text">Текст письма:</label>
+          <textarea class="write-us__input  write-us__input--textarea" id="form-text" name="text" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button button__write-us" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
 
     <section class="modal modal-map">
     	<h2 class="visualli-hidden">Как нас найти</h2>
-      <!-- map -->
-    	<span class="modal-close">x</span>
+      <p>
+        <img src="img/map-modal.jpg" width="960" height="559" alt="Офис компании по адресу: г. Москва, ул. Строителей, дом 15">
+      </p>
+    	<button class="modal-close" type="button">Закрыть</button>
     </section>
 
   </body>

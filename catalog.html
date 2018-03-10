@@ -10,14 +10,15 @@
 
     <header class="main-header">
       
-      <a class="header-logo" href="index.html">
+      <a class="logo logo__header">
         <img src="img/logo-device-header.svg" alt="Логотип Device">
       </a>
 
       <div class="search-form">
-        <form action="#" method="post">
-          <input class="search-form-input" type="search" placeholder="Поиск по сайту">
-          <button class="search-button" type="submit" name="send">Найти</button>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="search-form__label">Поле поиска по сайту</label>
+          <input class="search-form__input" id="search-form-field" type="search" name="search-query" placeholder="Поиск по сайту">
+          <button class="search-form__button" type="submit" name="search-form-button">Найти</button>
         </form>
       </div>
       <ul class="user-area user-area__header">
@@ -84,14 +85,63 @@
           <li class="sort-type__item"><a href="#" rel="nofollow">По популярности</a></li>
         </ul>
         <ul class="sort-direction">
-          <li class="sort-direction sort-direction__ascending"><a href="#" rel="nofollow">Ascending</a></li>
-          <li class="sort-direction sort-direction__descending sort-direction--active"><a href="#" rel="nofollow">Descending</a></li>
+          <li class="sort-direction sort-direction__ascending"><a href="#" rel="nofollow">По возрастанию</a></li>
+          <li class="sort-direction sort-direction__descending sort-direction--active"><a href="#" rel="nofollow">По убыванию</a></li>
         </ul>
       </div>
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма "Фильтр товаров" -->
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+
+          <fieldset class="filter__fieldset">
+            <legend class="filter__title">Стоимость</legend>
+            <!-- Здесь "нарисуем" ползунки выбора диапазона стоимости, не используя input type="range". -->
+          </fieldset>
+
+          <fieldset class="filter__fieldset">
+            <legend class="filter__title">Цвет</legend>
+            <ul class="filter-list">
+              <li class="filter-item">
+                <input class="visually-hidden" id="color-black" name="color-black" type="checkbox" checked>
+                <label class="filter__label filter__label--checkbox" for="color-black">Черный</label>
+              </li>
+              <li class="filter-item">
+                <input class="visually-hidden" id="color-white" name="color-white" type="checkbox">
+                <label class="filter__label filter__label--checkbox" for="color-white">Белый</label>
+              </li>
+              <li class="filter-item">
+                <input class="visually-hidden" id="color-blue" name="color-blue" type="checkbox" checked>
+                <label class="filter__label filter__label--checkbox" for="color-blue">Синий</label>
+              </li>
+              <li class="filter-item">
+                <input class="visually-hidden" id="color-red" name="color-red" type="checkbox" checked>
+                <label class="filter__label filter__label--checkbox" for="color-red">Красный</label>
+              </li>
+              <li class="filter-item">
+                <input class="visually-hidden" id="color-pink" name="color-pink" type="checkbox">
+                <label class="filter__label filter__label--checkbox" for="color-pink">Розовый</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="filter__fieldset">
+            <legend class="filter__title">Bluetooth</legend>
+            <ul class="filter-list">
+              <li class="filter-item">
+                <input class="visually-hidden" id="bluetooth-exist" name="bluetooth-exist" value="Есть" type="radio" checked>
+                <label class="filter__label filter__label--radio" for="bluetooth-exist">Есть</label>
+              </li>
+              <li class="filter-item">
+                <input class="visually-hidden" id="bluetooth-not-exist" name="bluetooth-exist" value="Нет" type="radio">
+                <label class="filter__label filter__label--radio" for="bluetooth-not-exist">Нет</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <button class="button button__filter" type="submit">Отправить</button>
+          
+        </form>
       </section>
 
       <section class="catalog">
@@ -180,7 +230,7 @@
 
     <footer class="main-footer">
     	
-      <a class="footer-logo" href="index.html">
+      <a class="logo logo__footer">
         <img src="img/logo-device-footer.svg" alt="Логотип Device">
       </a>
 

@@ -8,13 +8,15 @@
 }*/
 
 /* logo */
-.header-logo:hover,
-.footer-logo:hover {
+.logo {
+  display: block;
+}
+
+.logo:hover {
   opacity: 0.6;
 }
 
-.header-logo:active,
-.footer-logo:active {
+.logo:active {
   opacity: 0.3;
 }
 
