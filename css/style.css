@@ -21,7 +21,7 @@
 
 
 /* all website */
-*, *!::before, *!::after {
+*, *::before, *::after {
 box-sizing: inherit;
 }
 html {
@@ -497,27 +497,31 @@ a {
   border: none;
 }
 
+.write-us__input:hover {
+  background-color: #ebebeb;
+}
+
+.write-us__input:focus {
+  outline: none;
+  border: 3px solid #f0c52e;
+}
+
 .write-us__input--textarea {
   resize: none;
 }
 
 /* placeholder in modal*/
-.write-us__input::-webkit-input-placeholder {color:#000000; opacity: 0.4;}/* webkit */
-.write-us__input::-moz-placeholder {color:#000000; opacity: 0.4;}/* Firefox 19+ */
-.write-us__input:-moz-placeholder {color:#000000; opacity: 0.4;}/* Firefox 18- */
-.write-us__input:-ms-input-placeholder {color:#000000; opacity: 0.4;}/* IE */
+.write-us__input::-webkit-input-placeholder {color:#464646;}/* webkit */
+.write-us__input::-moz-placeholder {color:#464646;}/* Firefox 19+ */
+.write-us__input:-moz-placeholder {color:#464646;}/* Firefox 18- */
+.write-us__input:-ms-input-placeholder {color:#464646;}/* IE */
 
-.write-us__input:hover::-webkit-input-placeholder {color:#000000; opacity: 0.6;}/* webkit */
-.write-us__input:hover::-moz-placeholder {color:#000000; opacity: 0.6;}/* Firefox 19+ */
-.write-us__input:hover:-moz-placeholder {color:#000000; opacity: 0.6;}/* Firefox 18- */
-.write-us__input:hover:-ms-input-placeholder {color:#000000; opacity: 0.6;}/* IE */
+.write-us__input:focus::-webkit-input-placeholder {opacity: 0.0;}/* webkit */
+.write-us__input:focus::-moz-placeholder {opacity: 0.0;}/* Firefox 19+ */
+.write-us__input:focus:-moz-placeholder {opacity: 0.0;}/* Firefox 18- */
+.write-us__input:focus:-ms-input-placeholder {opacity: 0.0;}/* IE */
 
-.write-us__input:focus::-webkit-input-placeholder {color:#000000; opacity: 0.0;}/* webkit */
-.write-us__input:focus::-moz-placeholder {color:#000000; opacity: 0.0;}/* Firefox 19+ */
-.write-us__input:focus:-moz-placeholder {color:#000000; opacity: 0.0;}/* Firefox 18- */
-.write-us__input:focus:-ms-input-placeholder {color:#000000; opacity: 0.0;}/* IE */
-
-
+/* modal-close button */
 .modal-close {
   position: relative;
   display: block;
@@ -525,10 +529,21 @@ a {
   height: 55px;
   border: none;
   border-radius: 50%;
-  background-color: #f7e296;
+  background-color: #f0c52e;
+  opacity: 0.5;
   font-size: 0;
   cursor: pointer;
 }
+
+.modal-close:hover {
+  opacity: 1.0;
+}
+
+.modal-close:focus {
+  outline: none;
+  opacity: 0.3;
+}
+
 
 .modal-close::after,
 .modal-close::before {
