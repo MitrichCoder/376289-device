@@ -671,10 +671,13 @@ input[type="radio"].visually-hidden {
   width: 137px;
 }
 
-.promo-slider__item--slide-3 .promo-slider__table tr td:nth-child(1) {
-  width: 32%;
+.promo-slider__item--slide-2 .promo-slider__table tr td:nth-child(1) {
+  width: 200px;
 }
 
+.promo-slider__item--slide-3 .promo-slider__table {
+  width: 297px;
+}
 
 /* category block */
 .category {
@@ -1223,6 +1226,10 @@ input[type="radio"].visually-hidden {
   opacity: 0.5;
   font-size: 0;
   cursor: pointer;
+}
+
+.modal-show {
+  display: block;
 }
 
 .modal-close:hover {
