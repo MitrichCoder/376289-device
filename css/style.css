@@ -1647,6 +1647,30 @@ input[type="radio"]:checked ~ .filter__label--radio::before {
   margin-bottom: 19px;
 }
 
+.catalog__item--new {
+  position: relative;
+}
+
+.catalog__item--new::before {
+  content: "NEW";
+  position: absolute;
+  top: 29px;
+  right: 29px;
+  width: 60px;
+  height: 60px;
+  padding-left: 14px;
+  padding-top: 17px;
+  font-family: "Gilroy", Arial, sans-serif;
+  color: #d0d0d0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  z-index: 10;
+  border: 2px solid #d0d0d0;
+  border-radius: 50%;
+}
+
 /* catalog-action */
 .catalog__act {
   display: none;
