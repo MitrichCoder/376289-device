@@ -110,15 +110,12 @@ formWriteUs.addEventListener('submit', function(evt) {
 
 	if ( !nameField.value || !emailField.value ||  !textField.value) {
 		modalWriteUs.classList.add('modal-error');
-		console.log('Ну ты чё, мужик? Форму заполни! Все поля!)');
 	} else {
 
 		if (isStorageSupport) {
 			localStorage.setItem('name', nameField.value);
 			localStorage.setItem('email', emailField.value);
 		}
-
-		console.log('Ну наконец-то...');
 
 	}
 
