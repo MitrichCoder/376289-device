@@ -318,7 +318,7 @@
 		<!-- Modal windows -->
     <section class="modal modal__write-us">
     	<h2 class="visually-hidden">Напищите нам</h2>
-    	<form class="write-us" action="https://echo.htmlacademy.ru" method="post">
+    	<form class="write-us" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
         <div class="write-us__row">
           <p class="write-us__item">
             <label for="form-name">Ваше имя:</label>
@@ -326,7 +326,7 @@
           </p>
           <p class="write-us__item">
             <label for="form-email">Ваш e-mail:</label>
-            <input class="write-us__input" type="text" id="form-email" name="email" placeholder="email@example.com">
+            <input class="write-us__input" type="emile" id="form-email" name="email" placeholder="email@example.com">
           </p>
         </div>
         <p class="write-us__item">
@@ -340,11 +340,16 @@
 
     <section class="modal modal__map">
     	<h2 class="visually-hidden">Как нас найти</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1891.273777153533!2d37.528565013652404!3d55.686966941353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1522151078692" width="960" height="556" frameborder="0" style="border:0" allowfullscreen></iframe>
       <p>
         <img src="img/map-modal.jpg" width="960" height="559" alt="Офис компании по адресу: г. Москва, ул. Строителей, дом 15">
       </p>
     	<button class="modal-close" type="button">Закрыть</button>
     </section>
+
+    <div class="modal-overlay"></div>
+
+    <script src="js/script.js"></script>
 
   </body>
 </html>
