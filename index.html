@@ -13,7 +13,7 @@
       <div class="container">
 
         <a class="logo logo__header">
-          <img src="img/logo-device-header.svg" alt="Логотип Device">
+          <img src="img/logo-device-header.svg" width="163" height="36" alt="Логотип Device">
         </a>
 
         <div class="user-wrap">
@@ -74,17 +74,18 @@
       <div class="container">
         <section class="promo-slider">
           <h2 class="visually-hidden">Новые, популярные и акционные товары</h2>
+
+          <input class="visually-hidden" id="slider-btn-1" type="radio" name="toggle" checked>
+          <input class="visually-hidden" id="slider-btn-2" type="radio" name="toggle">
+          <input class="visually-hidden" id="slider-btn-3" type="radio" name="toggle">
+
+          <div class="promo-slider__controls">
+            <label class="promo-slider__control" for="slider-btn-1">Слайдер 1</label>
+            <label class="promo-slider__control" for="slider-btn-2">Слайдер 2</label>
+            <label class="promo-slider__control" for="slider-btn-3">Слайдер 3</label>
+          </div>
+
           <ul class="promo-slider__list">
-
-            <input class="visually-hidden" id="slider-btn-1" type="radio" name="toggle" checked>
-            <input class="visually-hidden" id="slider-btn-2" type="radio" name="toggle">
-            <input class="visually-hidden" id="slider-btn-3" type="radio" name="toggle">
-
-            <div class="promo-slider__controls">
-              <label class="promo-slider__control" for="slider-btn-1">Слайдер 1</label>
-              <label class="promo-slider__control" for="slider-btn-2">Слайдер 2</label>
-              <label class="promo-slider__control" for="slider-btn-3">Слайдер 3</label>
-            </div>
 
             <li class="promo-slider__item promo-slider__item--slide-1">
               <img class="promo-slider__img" src="img/promo-img-1.png" width="384" height="486" alt="Селфи палка">
@@ -187,18 +188,18 @@
       <section class="services">
         <div class="container">
           <h2 class="visually-hidden">Дополнительные услуги</h2>
-  
+
+          <input class="visually-hidden" id="services-btn-1" type="radio" name="services-toggle" checked>
+          <input class="visually-hidden" id="services-btn-2" type="radio" name="services-toggle">
+          <input class="visually-hidden" id="services-btn-3" type="radio" name="services-toggle">
+          
+          <div class="services__controls">
+            <label class="button services__control" for="services-btn-1">Доставка</label>
+            <label class="button services__control" for="services-btn-2">Гарантия</label>
+            <label class="button services__control" for="services-btn-3">Кредит</label>
+          </div>
+
           <ul class="services__list">
-
-            <input class="visually-hidden" id="services-btn-1" type="radio" name="services-toggle" checked>
-            <input class="visually-hidden" id="services-btn-2" type="radio" name="services-toggle">
-            <input class="visually-hidden" id="services-btn-3" type="radio" name="services-toggle">
-
-            <div class="services__controls">
-              <label class="button services__control" for="services-btn-1">Доставка</label>
-              <label class="button services__control" for="services-btn-2">Гарантия</label>
-              <label class="button services__control" for="services-btn-3">Кредит</label>
-            </div>
 
             <li class="services__item services__item--slide1">
               <h3 class="services__title">Доставка</h3>
@@ -277,7 +278,7 @@
         
         <div class="main-footer__top-row">
           <a class="logo logo__footer">
-            <img src="img/logo-device-footer.svg" alt="Логотип Device">
+            <img src="img/logo-device-footer.svg" width="163" height="36" alt="Логотип Device">
           </a>
 
           <ul class="user-area user-area__footer">
@@ -325,7 +326,7 @@
           </p>
           <p class="write-us__item">
             <label for="form-email">Ваш e-mail:</label>
-            <input class="write-us__input" type="emile" id="form-email" name="email" placeholder="email@example.com">
+            <input class="write-us__input" type="email" id="form-email" name="email" placeholder="email@example.com">
           </p>
         </div>
         <p class="write-us__item">
@@ -339,7 +340,7 @@
 
     <section class="modal modal__map">
     	<h2 class="visually-hidden">Как нас найти</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1891.273777153533!2d37.528565013652404!3d55.686966941353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1522151078692" width="960" height="556" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1891.273777153533!2d37.528565013652404!3d55.686966941353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1522151078692" width="960" height="556" allowfullscreen></iframe>
       <p>
         <img src="img/map-modal.jpg" width="960" height="559" alt="Офис компании по адресу: г. Москва, ул. Строителей, дом 15">
       </p>
@@ -348,7 +349,7 @@
 
     <div class="modal-overlay"></div>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
 
   </body>
 </html>
